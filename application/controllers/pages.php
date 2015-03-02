@@ -14,6 +14,12 @@ class Pages extends CI_Controller {
         $data['server'] = $_SERVER['SERVER_NAME'];
         $data['hello'] =  "Hello, world!";
         
-        var_dump($data);
+        echo '<pre>';
+        print_r($data);
+        echo '</pre>';
+        
+        echo "<pre>";
+        print_r(ENVIRONMENT);
+        echo '</pre>';
 	}
 }
