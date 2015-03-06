@@ -1,0 +1,13 @@
+{
+    "name": "mjesus/ducking-octo-batman",
+    "require-dev": {
+        "fzaninotto/faker": "~1.4"
+    },
+    "authors": [
+        {
+            "name": "Miguel",
+            "email": "migl.rodri@gmail.com"
+        }
+    ],
+    "require": {}
+}

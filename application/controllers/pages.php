@@ -2,8 +2,7 @@
 
 class Pages extends CI_Controller {
 
-	public function index()
-	{
+	public function index() {
 		//$this->load->view('welcome_message');
         $data['success'] = 'blank';
         
@@ -21,5 +20,12 @@ class Pages extends CI_Controller {
         echo "<pre>";
         print_r(ENVIRONMENT);
         echo '</pre>';
+        
+        $this->load->helper('httprequest');
+        $url = 'http://m.zerozero.pt/zapping.php';
+        $results = getGamesZapping($url);
+        echo var_dump($results);
+        
 	}
+    
 }
