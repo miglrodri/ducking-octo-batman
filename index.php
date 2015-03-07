@@ -19,11 +19,10 @@
  *
  */
 	//define('ENVIRONMENT', 'development');
-
 if ($_SERVER['SERVER_NAME']=='ducking-octo-batman.eu01.aws.af.cm')
-   define('ENVIRONMENT', 'production');
+	define('ENVIRONMENT', 'production');
 else
-   define('ENVIRONMENT', 'development');
+	define('ENVIRONMENT', 'development');
 
 /*
  *---------------------------------------------------------------
@@ -203,6 +202,15 @@ if (defined('ENVIRONMENT'))
 
 		define('APPPATH', BASEPATH.$application_folder.'/');
 	}
+
+
+/*
+ * --------------------------------------------------------------------
+ * LOAD THE COMPOSER AUTOLOAD FILE
+ * --------------------------------------------------------------------
+ */
+include_once 'vendor/autoload.php';
+
 
 /*
  * --------------------------------------------------------------------
